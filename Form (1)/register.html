@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+
+<body>
+    <section class="registration">
+        <div class="registrationForm">
+            <h2>Registration Form</h2>
+            <form>
+                <div class="fldRow">
+                    <div class="fldBox">
+                        <label for="fullname">Full Name :</label>
+                        <input class="formControl" type="text" id="fullname" name="fullname" required>
+                    </div>
+
+                    <div class="fldBox">
+                        <label for="username">Username :</label>
+                        <input class="formControl" type="text" id="username" name="username" required>
+                    </div>
+                </div>
+
+                <div class="fldRow">
+                    <div class="fldBox">
+                        <label for="password">Password :</label>
+                        <input class="formControl" type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="fldBox">
+                        <label for="password">Confirm Password :</label>
+                        <input class="formControl" type="password" id="password" name="password" required>
+                    </div>
+
+                </div>
+
+                <div class="fldRow">
+                    <div class="fldBox">
+                        <label for="email">Email Address :</label>
+                        <input class="formControl" type="text" id="email" name="email" required>
+                    </div>
+
+                    <div class="fldBox">
+                        <label for="phone">Phone Number :</label>
+                        <input class="formControl" type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="fldRow">
+                    <div class="fldBox">
+                        <label for="dob">Date of Birth :</label>
+                        <input class="formControl" type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+
+                <div class="fldRow">
+                    <div class="fldBox gender">
+                        <label>Gender :</label>
+                        <label> <input type="radio" name="gender" value="male" required>Male </label>
+                        <label> <input type="radio" name="gender" value="female" required> Female </label>
+                        <label> <input type="radio" name="gender" value="other" required>Other</label>
+                    </div>
+                </div>
+
+                <div class="fldRow">
+                    <div class="fldBox hobbies">
+                        <label>Hobbies :</label>
+                        <label><input type="checkbox" name="hobbies" value="reading">Reading</label>
+                        <label><input type="checkbox" name="hobbies" value="traveling">Traveling</label>
+                        <label><input type="checkbox" name="hobbies" value="cooking">Cooking</label>
+                        <label><input type="checkbox" name="hobbies" value="talking">Talking</label>
+                    </div>
+                </div>
+
+                <div class="fldRow">
+                    <div class="fldBox">
+                        <label for="profile-pic">Profile picture :</label>
+                        <input type="file" id="profile-pic" name="profile-picture" required>
+                    </div>
+
+
+                    <div class="fldBox">
+                        <label for="country">Country :</label>
+                        <select class="formControl" id="country" name="country" required>
+                            <option value="">Select your country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fldRow txtArea">
+                    <div class="fldBox">
+                        <label for="bio">Bio :</label>
+                        <textarea class="formControl" id="bio" name="bio" rows="7" required></textarea>
+                    </div>
+                </div>
+
+                <div class="fldRow agree">
+                    <div class="fldBox">
+                        <label><input type="checkbox" name="terms" required>I agree to the Terms and Conditions</label>
+                    </div>
+                </div>
+
+                <div class="fldRow submitBtn">
+                    <div class="btnBox">
+                        <button class="">Submit</button>
+                        <button type="reset" class="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: #fbcedd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1rem;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 2.87rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1.87rem;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fldBox label {
+    display: block;
+    font-size: 16px;
+    margin: 0 0 4px;
+}
+
+.fldBox .formControl {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    background-color: #fbfafa;
+    border: .17rem solid #eaeaea;
+    border-radius: .5rem;
+    padding-inline: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .3px;
+    color: #363634;
+    transition: all 0.4s ease;
+}
+
+.fldBox .formControl:focus {
+    border-color: #ed84ad;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #999;
+    font-weight: 400;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #999;
+    font-weight: 400;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #999;
+    font-weight: 400;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #999;
+    font-weight: 400;
+}
+
+.fldBox {
+    margin: 0 0 15px;
+}
+
+.fldBox.chkBoxFld {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fldBox.chkBoxFld label {
+    margin: 0;
+}
+
+.btnBox button {
+    background: #c91e60;
+    color: #fff;
+    border: 0;
+    width: 150px;
+    height: 44px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnBox {
+    margin: 30px 0 0;
+}
+
+section.registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0;
+}
+
+.registrationForm {
+    width: 700px;
+    background: #fff;
+    border-radius: 0 10px 10px 0;
+    padding: 20px 34px 30px 34px;
+    box-shadow: 0 0 9px -4px #333;
+    position: relative;
+    margin-left: 250px;
+}
+
+.fldRow {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.registrationForm h2 {
+    margin: 0 0 20px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.fldRow .fldBox {
+    width: 50%;
+}
+
+.fldBox.gender {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.fldBox.gender label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.fldBox.hobbies {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fldBox.hobbies label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.fldRow.txtArea .fldBox {
+    width: 100%;
+}
+
+.fldRow.txtArea .fldBox .formControl {
+    height: 100px;
+}
+
+.fldRow.agree .fldBox {
+    width: 100%;
+}
+
+.fldRow.agree label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fldRow.submitBtn .btnBox {
+    margin: 0;
+}
+
+
+
+.registrationForm:before {
+    content: "";
+    position: absolute;
+    background: url(../image/img4.jpg) no-repeat;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 12px 0 0 12px;
+}
+
+.registrationForm:after {
+    content: "";
+    position: absolute;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px 0 0 12px;
+}
+
+.btnBox button {
+    margin-right: 10px;
+}
+
+.btnBox button.reset {
+    background: #ddd;
+    color: #000;
+}
+
+
+
+/* media query */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    section.registration {
+        margin: 30px 20px 0;
+    }
+
+    .registrationForm:after {
+        left: -200px;
+        width: 200px;
+    }
+
+    .registrationForm:before {
+        width: 200px;
+        left: -200px;
+    }
+
+    .registrationForm {
+        margin-left: 200px;
+        width: 73%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    section.registration {
+        margin: 189px 15px 0;
+    }
+
+    .registrationForm:before {
+        width: 100%;
+        left: 0;
+        border-radius: 10px 10px 0 0;
+        top: -180px;
+        height: 180px;
+    }
+
+    .registrationForm:after {
+        width: 100%;
+        left: 0;
+        border-radius: 10px 10px 0 0;
+        top: -180px;
+        height: 180px;
+    }
+
+    .registrationForm {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px 15px 30px 15px;
+    }
+
+    .registrationForm h2 {
+        font-size: 22px;
+    }
+
+    .fldRow {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .fldRow .fldBox {
+        width: 100%;
+    }
+
+    .fldBox {
+        margin: 0 0 10px;
+    }
+
+    .fldBox label {
+        font-size: 14px;
+        margin: 0 0 1px;
+    }
+
+    .fldBox.gender {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .fldBox.hobbies {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .fldBox.gender label {
+        font-size: 14px;
+    }
+
+    .fldBox.hobbies label {
+        font-size: 14px;
+    }
+
+    .fldRow.agree label {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .btnBox button {
+        width: 110px;
+    }
+
+}
